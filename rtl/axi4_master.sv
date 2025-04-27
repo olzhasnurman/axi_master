@@ -36,27 +36,26 @@ module axi4_master
     output logic          o_wvalid,
     output logic [ 63:0 ] o_wdata,
     output logic [  7:0 ] o_wstrb, 
-    output logic 	      o_wlast,
-    output logic 	      o_bready,
-    input  logic 	      i_bvalid,
-	input  logic [  3:0 ] i_bid,
+    output logic          o_wlast,
+    output logic          o_bready,
+    input  logic          i_bvalid,
+    input  logic [  3:0 ] i_bid,
     input  logic [  1:0 ] i_bresp,
     
     // AXI4 Master Bus: Read Interface.
     input  logic          i_arready,
-    output logic 	      o_arvalid,
+    output logic          o_arvalid,
     output logic [  3:0 ] o_arid,
     output logic [ 31:0 ] o_araddr,
     output logic [  7:0 ] o_arlen,
     output logic [  2:0 ] o_arsize,
     output logic [  1:0 ] o_arburst,
-    output logic 	      o_rready,
-    input  logic 	      i_rvalid,
+    output logic          o_rready,
+    input  logic          i_rvalid,
     input  logic [  3:0 ] i_rid, 
     input  logic [  1:0 ] i_rresp,
     input  logic [ 63:0 ] i_rdata,
-    input  logic 	      i_rlast
-
+    input  logic          i_rlast
 );
     logic s_wlast;
 
