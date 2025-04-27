@@ -25,9 +25,9 @@ module axi4_master
     output logic          o_axi_handshake,
 
     // AXI4 Master Bus: Write Interface.
-    input  logic 	        i_awready,
-    output logic 	        o_awvalid,
-    output logic [  3:0 ] o_awid,
+		input  logic          i_awready,
+		output logic          o_awvalid,
+		output logic [  3:0 ] o_awid,
 		output logic [ 31:0 ] o_awaddr,
     output logic [  7:0 ] o_awlen,
     output logic [  2:0 ] o_awsize,
